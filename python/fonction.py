@@ -1,8 +1,5 @@
 import random
 
-random.randint(5, 15)
-
-
 def createRandomArray(tailleListe: int):
     """Créer une liste de nombres aléatoires (tous différents)
 
@@ -32,7 +29,3 @@ def createRandomArray(tailleListe: int):
                 test = False
                 i += 1
     return resultat
-
-
-resultat = createRandomArray(15)
-print(resultat)
