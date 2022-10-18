@@ -22,14 +22,12 @@ def exercice1():
 
 
 def exercice2():
-    test = True
-    while test:
-        age = input("Quel âge as-tu ? ")
-        try:
-            age = int(age)
-            test = False
-        except:
-            pass
+    age = input("Quel âge as-tu ? ")
+    try:
+        age = int(age)
+        test = False
+    except:
+        exercice2()
     if age < 18:
         return "Vous êtes mineur"
     elif age == 18:
@@ -48,17 +46,14 @@ def exercice2():
 #  (deuxième nombre saisi par l'utilisateur) est égale à 0, n'effectuez pas l'opération, affichez le message suivant "Division par 0 impossible"
 
 def exercice3():
+    nombre1 = input("Nombre 1 : ")
+    nombre2 = input("Nombre 2 : ")
 
-    test = True
-    while test:
-        nombre1 = input("Nombre 1 : ")
-        nombre2 = input("Nombre 2 : ")
-        try:
-            nombre1 = int(nombre1)
-            nombre2 = int(nombre2)
-            test = False
-        except:
-            pass
+    try:
+        nombre1 = int(nombre1)
+        nombre2 = int(nombre2)
+    except:
+        exercice3()
 
     if nombre2 == 0:
         division = "Division par 0 impossible"
@@ -93,7 +88,7 @@ def exercice4():
         nombre = input("Donner un nombre entre 0 et 100: ")
         try:
             nombre = int(nombre)
-            if nombre <= 0 or nombre <= 100:
+            if nombre >= 0 or nombre <= 100:
                 test = False
         except:
             pass

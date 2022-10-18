@@ -22,5 +22,17 @@ def exercice9() -> str:
     if tailleList < 1 or tailleList > 100:
         return message
 
-    listeNombre = createRandomList(tailleList)
-    return f"Vous avez choisi une liste de taille {tailleList}.\n Ce qui a donné la liste : \n {listeNombre}.\n La voila triée :\n {sorted(listeNombre)}"
+    listeNombres = createRandomList(tailleList)
+    print(
+        f'Vous avez choisi une liste de taille {tailleList}.\n Voici cette liste : \n {listeNombres}')
+
+    newlist = []
+    while len(listeNombres) > 0:
+        minValue = 100
+        for nombre in listeNombres:
+            if nombre < minValue:
+                minValue = nombre
+        newlist.append(minValue)
+        listeNombres.remove(minValue)
+
+    return f"La voila triée :\n {newlist}"
