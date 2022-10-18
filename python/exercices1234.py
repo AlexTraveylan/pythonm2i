@@ -33,7 +33,7 @@ def exercice2():
     if age < 18:
         return "Vous êtes mineur"
     elif age == 18:
-        return "vous êtes majeur"
+        return "vous êtes majeur et vous avez exactement 18 ans"
     else:
         return "Vous êtes majeur"
 
@@ -84,6 +84,7 @@ def exercice3():
 # "Nombre compris entre 0 et 50"
 # "Nombre compris entre 51 et 75"
 # "Nombre supérieur à 75 ou inférieur à 0"
+
 
 def exercice4():
 
