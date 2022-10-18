@@ -17,10 +17,12 @@ def exercice9() -> str:
         tailleList = int(
             input("Donner la taille de la liste des notes (entier entre 1 et 100) : "))
     except:
-        return message
+        print(message)
+        return exercice9()
 
     if tailleList < 1 or tailleList > 100:
-        return message
+        print(message)
+        return exercice9()
 
     listeNombres = createRandomList(tailleList)
     print(
