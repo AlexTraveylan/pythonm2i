@@ -104,34 +104,3 @@ def exercice4():
         return "Nombre compris entre 51 et 75"
     else:
         return "Nombre supérieur à 75"
-
-
-def main():
-    test = True
-    while test:
-        print("Taper 'exit' pour quitter le programme.")
-        numeroExercice = input(
-            "Choisir le numero de l'exercice (entre 1 et 4) : ")
-        match numeroExercice:
-            case "exit":
-                print('\n')
-                print("Fermeture du programme")
-                test = False
-            case "1":
-                print(exercice1())
-                print('\n')
-            case "2":
-                print(exercice2())
-                print('\n')
-            case "3":
-                print(exercice3())
-                print('\n')
-            case "4":
-                print(exercice4())
-                print('\n')
-            case _:
-                print("Commande incorrecte")
-                print('\n')
-
-
-main()

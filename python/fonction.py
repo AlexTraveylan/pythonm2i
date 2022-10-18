@@ -1,7 +1,7 @@
 import random
 
 
-def createRandomArray(tailleListe: int) -> list:
+def createRandomList(tailleListe: int) -> list:
     """Créer une liste de nombres aléatoires (tous différents)
 
     Paramètre
