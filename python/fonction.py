@@ -12,7 +12,7 @@ def createRandomArray(tailleListe: int) -> list:
     Retour
     ------
     list
-        Un tableau de taille : tailleListe, remplis de nombres aléatoires entre 1 et 100 tous différents
+        Une liste de taille : tailleListe, remplis de nombres aléatoires entre 1 et 100 tous différents
     """
     if tailleListe < 0 or tailleListe > 100:
         tailleListe = 100
