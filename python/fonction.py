@@ -1,6 +1,7 @@
 import random
 
-def createRandomArray(tailleListe: int):
+
+def createRandomArray(tailleListe: int) -> list:
     """Créer une liste de nombres aléatoires (tous différents)
 
     Paramètre
@@ -10,8 +11,8 @@ def createRandomArray(tailleListe: int):
 
     Retour
     ------
-    array
-        Un tableau de taille : tailleListe, remplis de nombres aléatoires
+    list
+        Un tableau de taille : tailleListe, remplis de nombres aléatoires entre 1 et 100 tous différents
     """
     if tailleListe < 0 or tailleListe > 100:
         tailleListe = 100
