@@ -45,9 +45,9 @@ class Classe:
 eleve1 = Eleve("eleve1", "eleve1", createRandomList(5))
 print(f'La moyenne de {eleve1.nom} {eleve1.prenom} est : {eleve1.moyenne()}')
 eleve2 = Eleve("eleve2", "eleve2", createRandomList(5))
-print(f'La moyenne de {eleve2.nom} {eleve2.prenom} est : {eleve3.moyenne()}')
+print(f'La moyenne de {eleve2.nom} {eleve2.prenom} est : {eleve2.moyenne()}')
 eleve3 = Eleve("eleve3", "eleve3", createRandomList(5))
-print(f'La moyenne de {eleve3.nom} {eleve3.prenom} est : {eleve2.moyenne()}')
+print(f'La moyenne de {eleve3.nom} {eleve3.prenom} est : {eleve3.moyenne()}')
 eleve4 = Eleve("eleve4", "eleve4", createRandomList(5))
 print(f'La moyenne de {eleve4.nom} {eleve4.prenom} est : {eleve4.moyenne()}')
 eleve5 = Eleve("eleve5", "eleve5", createRandomList(5))
@@ -77,4 +77,4 @@ classe = Classe("CM1 de Madame Curvier", eleves)
 print(f"creation de la classe {classe.nom} ... de {len(eleves)} élèves")
 print(classe.moyenne())
 
-#/Fin des tests
+# /Fin des tests
