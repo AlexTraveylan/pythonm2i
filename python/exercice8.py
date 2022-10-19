@@ -1,4 +1,4 @@
-from fonction import createRandomList
+from fonction import createRandomList, moyenneListFloat
 
 
 class Eleve:
@@ -15,7 +15,7 @@ class Eleve:
             float:
                 moyenne des notes
         """
-        return sum(self.notes)/len(self.notes)
+        return moyenneListFloat(self.notes)
 
 
 class Classe:
@@ -37,7 +37,7 @@ class Classe:
         # La fonction map applique a chaque eleve sa methode moyenne() pour donner une liste des moyennes des eleves de la classe.
         listeMoyenne = list(map(lambda x: x.moyenne(), self.listeEleves))
         print(f'La liste des moyennes de la classe : {listeMoyenne}')
-        return sum(listeMoyenne)/len(listeMoyenne)
+        return moyenneListFloat(listeMoyenne)
 
 
 # Tests des classes ! ci dessous.

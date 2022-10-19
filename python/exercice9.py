@@ -11,17 +11,17 @@ from fonction import *
 
 
 def exercice9() -> str:
-    message = "Vous n'avez pas entré un entier entre 1 et 100"
+    messageErreur = "Vous n'avez pas entré un entier entre 1 et 100"
 
     try:
         tailleList = int(
             input("Donner la taille de la liste des notes (entier entre 1 et 100) : "))
     except:
-        print(message)
+        print(messageErreur)
         return exercice9()
 
     if tailleList < 1 or tailleList > 100:
-        print(message)
+        print(messageErreur)
         return exercice9()
 
     listeNombres = createRandomList(tailleList)

@@ -30,3 +30,19 @@ def createRandomList(tailleListe: int) -> list:
                 test = False
                 i += 1
     return resultat
+
+
+def moyenneListFloat(liste: list[float]):
+    """Calcul la moyenne des valeurs d'une list de float
+
+    parameters
+    ---------
+    liste : list[float]
+        La liste qui contient les valeurs.
+
+    Returns
+    -------
+    float
+        La moyenne des valeurs de la liste en entrée
+    """
+    return sum(liste)/len(liste)
