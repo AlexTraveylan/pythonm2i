@@ -1,4 +1,4 @@
-from fonction import createRandomList
+from fonction import createRandomList, moyenneListFloat
 
 # Exercice 7 : fonctions, boucles, tableaux,
 # opérateurs d'incrémentation
@@ -21,6 +21,6 @@ def exercice7():
 
     listeNotes = createRandomList(tailleListe)
 
-    moyenne = sum(listeNotes)/len(listeNotes)
+    moyenne = moyenneListFloat(listeNotes)
 
     return f'La liste des notes est : \n {listeNotes} \n La moyenne est : {moyenne}'
