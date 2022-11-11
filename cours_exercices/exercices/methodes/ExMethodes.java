@@ -25,42 +25,43 @@ public class ExMethodes {
 
     // Methode cube
     private static int cube(int n) {
-        return n*n*n;
+        return n * n * n;
     }
-    
+
     // Methode volume
     private static double volumeSphere(int rayon) {
         return (4f / 3) * Math.PI * cube(rayon);
     }
-    
-    //bonus factoriel
+
+    // bonus factoriel
     private static long factoriel(int n) {
         if (n == 0) {
             return 1;
         } else {
-            return n*factoriel(n-1);
+            return n * factoriel(n - 1);
         }
     }
-    
+
     // Methode principale
     public static void main(String[] args) {
         Scanner keyb = new Scanner(System.in);
         System.out.print("Entrer le nombre n°1 : ");
         int num1 = keyb.nextInt();
-        
+
         System.out.print("Entrer le nombre n°2 : ");
         int num2 = keyb.nextInt();
-        
+
         System.out.print("Entrer le nombre n°3 : ");
         int num3 = keyb.nextInt();
-        
+
         System.out.println("\nLe maximum des trois nombres entrée est : " + maxTroisNombres(num1, num2, num3) + "\n");
-        int[] listNombres = {num1, num2, num3};
+        int[] listNombres = { num1, num2, num3 };
         for (int nombre : listNombres) {
             System.out.println(nombre + "! = " + factoriel(nombre));
             System.out.println("Le cube de " + nombre + " est : " + cube(nombre));
-            System.out.println("Le volume d'une sphère de rayon " + nombre + " m est : " + volumeSphere(nombre) + " m3\n");
+            System.out.println(
+                    "Le volume d'une sphère de rayon " + nombre + " m est : " + volumeSphere(nombre) + " m3\n");
         }
-        
+        keyb.close();
     }
 }

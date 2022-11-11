@@ -6,15 +6,13 @@ package cours_exercices.exercices.ExerciceAeroport;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author tdema
  */
 public class Aeroport {
-     private List<ObjetVolant> objetsVolants = new ArrayList<>();
+    private List<ObjetVolant> objetsVolants = new ArrayList<>();
 
     public void ajoute(ObjetVolant objetVolant) {
         this.objetsVolants.add(objetVolant);
@@ -47,9 +45,9 @@ public class Aeroport {
 
     public static void main(String args[]) {
         Aeroport charlesDeGaulle = new Aeroport();
-        //Ajouter ici des avions
-        //ObjetVolant objetVolant = new ....
-        //charlesDeGaulle.ajoute(..);
+        // Ajouter ici des avions
+        // ObjetVolant objetVolant = new ....
+        // charlesDeGaulle.ajoute(..);
         charlesDeGaulle.ajoute(new Montgolfiere());
         charlesDeGaulle.ajoute(new Dirigeable());
         charlesDeGaulle.demarre();
